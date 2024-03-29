@@ -1,0 +1,37 @@
+/* conda commands */
+conda create -n "name" python //Env
+
+conda activate "name"
+
+conda deactivate "name"
+
+conda install django
+
+django-admin startproject "name"
+
+python manage.py runserver
+
+python manage.py startapp "name"
+
+/* Django create database */
+python manage.py migrate
+
+python manage.py makemigrations "name"
+
+python manage.py migrate (do again after makemigrations)
+
+/* test the database */
+python manage.py shell
+
+print("something ") #to test if the python is working
+
+print(Topic.objects.all()) #manually add items to SQLite
+
+t = Topic(top_name="something")
+
+t.save()
+
+/* create admin&super user */
+python manage.py createsuperuser
+
+
